@@ -19,7 +19,11 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/img/apple-touch-icon-72x72-precomposed.png" />
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="/img/apple-touch-icon-72x72-precomposed.png"
+/>
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
@@ -33,6 +37,13 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+
+<!-- Scripts -->
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/scrolling-nav.js"></script>
+<script src="../js/common_functions.js"></script>
+<script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script is:inline src="scrollCue.min.js"></script>
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
