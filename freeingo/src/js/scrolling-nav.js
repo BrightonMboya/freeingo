@@ -23,3 +23,5 @@
   });
 
 })(jQuery);
+
+console.log("I am loaded scrolling nav js")
