@@ -1,34 +1,32 @@
-<section id="hero">
-  <div class="heroContainer">
-    <div id="info">
-      <h1>Lorem Ipsum</h1>
-      <h2>Lorem ipsum.</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-      </p>
-      <a id="heroButton" href="#">Contact Me</a>
+<div class="h-screen relative">
+  <div
+    class="absolute text-white flex flex-col items-start justify-center top-0 right-0 bottom-0 left-0 bg-black/60">
+    <img
+      src="/img/img2.jpg"
+      class="w-screen h-screen object-cover absolute top-0 left-0 right-0 -z-50 opacity-80"
+    />
+    <div class="container">
+      <div class="col-md-6">
+        <span class="text-uppercase">The freeingo experience</span>
+        <h1 class="mb-4 mt-2 text-white font-bold">
+          Where Luxury Meets Wilderness
+        </h1>
+        <p>
+          With FreeinGo we help you create memorable experience during your
+          travel in Tanzania. From observing Wild Beast in the Serengeti Plains,
+          to trekking Mt. Kilimanjaro, FreeinGo is the right choice for your
+          travel.
+        </p>
+        <div class="mt-5">
+          <!-- hover background-color: white; color: black; -->
+          <a
+            href="#"
+            class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+            style="border-radius: 30px; background-color: #9B5DE5;"
+            >Get Started</a
+          >
+        </div>
+      </div>
     </div>
   </div>
-
-  <script is:inline>
-    var images = [
-      "/imgs/img1.jpg",
-      "/imgs/img1.jpg",
-      "/imgs/img1.jpg",
-      "https://via.placeholder.com/704x90",
-    ];
-
-    window.addEventListener("load", startBackgroundTransition);
-
-    function startBackgroundTransition() {
-      var container = document.getElementById("hero");
-
-      setInterval(function () {
-        container?.style.setProperty("--background-image", `url(${images[1]})`);
-        images.push(images.shift());
-      }, 3000);
-    }
-  </script>
-</section>
+</div>
