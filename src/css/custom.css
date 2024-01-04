@@ -1,0 +1,27 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+
+
+.add_margin {
+    margin-top: 100px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#hero {
+  --background-image: url(https://via.placeholder.com/701x90);
+  height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.342),
+    rgba(0, 0, 0, 0.342)), 
+    var(--background-image) fixed no-repeat center / cover;
+  color: #fff9ff;
+  /*transition: opacity 1s;
+  opacity: 1;*/
+}
